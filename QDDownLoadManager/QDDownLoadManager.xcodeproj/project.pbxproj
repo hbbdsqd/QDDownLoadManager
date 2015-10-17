@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04CF74D11BD29AE90094F2DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF74D01BD29AE90094F2DF /* ViewController.m */; };
 		4ED112431BCFCA8A0022AD35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED112421BCFCA8A0022AD35 /* main.m */; };
 		4ED112461BCFCA8A0022AD35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED112451BCFCA8A0022AD35 /* AppDelegate.m */; };
-		4ED112491BCFCA8A0022AD35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED112481BCFCA8A0022AD35 /* ViewController.m */; };
 		4ED1124C1BCFCA8A0022AD35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED1124A1BCFCA8A0022AD35 /* Main.storyboard */; };
 		4ED1124E1BCFCA8A0022AD35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED1124D1BCFCA8A0022AD35 /* Images.xcassets */; };
 		4ED112511BCFCA8A0022AD35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED1124F1BCFCA8A0022AD35 /* LaunchScreen.xib */; };
@@ -32,13 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04CF74CF1BD29AE90094F2DF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04CF74D01BD29AE90094F2DF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4ED1123D1BCFCA8A0022AD35 /* QDDownLoadManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QDDownLoadManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED112411BCFCA8A0022AD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ED112421BCFCA8A0022AD35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4ED112441BCFCA8A0022AD35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
 		4ED112451BCFCA8A0022AD35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
-		4ED112471BCFCA8A0022AD35 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
-		4ED112481BCFCA8A0022AD35 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		4ED1124B1BCFCA8A0022AD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4ED1124D1BCFCA8A0022AD35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../Images.xcassets; sourceTree = "<group>"; };
 		4ED112501BCFCA8A0022AD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -75,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04CF74CE1BD29AE90094F2DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04CF74CF1BD29AE90094F2DF /* ViewController.h */,
+				04CF74D01BD29AE90094F2DF /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		4ED112341BCFCA890022AD35 = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +140,8 @@
 		4ED112661BCFCAF80022AD35 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04CF74CE1BD29AE90094F2DF /* Controller */,
 				4ED112671BCFCAF80022AD35 /* Category */,
-				4ED112681BCFCAF80022AD35 /* Controller */,
 				4ED112691BCFCAF80022AD35 /* DownloadManager */,
 				4ED1126A1BCFCAF80022AD35 /* Other */,
 			);
@@ -148,15 +157,6 @@
 				4ED112741BCFCB5C0022AD35 /* NSURL+Addition.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		4ED112681BCFCAF80022AD35 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4ED112471BCFCA8A0022AD35 /* ViewController.h */,
-				4ED112481BCFCA8A0022AD35 /* ViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		4ED112691BCFCAF80022AD35 /* DownloadManager */ = {
@@ -293,8 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED112761BCFCB5C0022AD35 /* NSURL+Addition.m in Sources */,
-				4ED112491BCFCA8A0022AD35 /* ViewController.m in Sources */,
 				4ED112751BCFCB5C0022AD35 /* NSString+Addition.m in Sources */,
+				04CF74D11BD29AE90094F2DF /* ViewController.m in Sources */,
 				4ED1126F1BCFCB430022AD35 /* HTTPDownload.m in Sources */,
 				4ED112791BCFCC430022AD35 /* FileUtility.m in Sources */,
 				4ED112701BCFCB430022AD35 /* HTTPDownloadManager.m in Sources */,
@@ -492,6 +492,7 @@
 				4ED112621BCFCA8A0022AD35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4ED112631BCFCA8A0022AD35 /* Build configuration list for PBXNativeTarget "QDDownLoadManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +501,7 @@
 				4ED112651BCFCA8A0022AD35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
